@@ -1,0 +1,14 @@
+//find the senior
+
+let age=list1.map((data)=>{
+  return data.age
+})
+
+const oldAge=age.sort((a,b)=>a-b).pop()
+
+
+const res=list1.filter((data)=>{
+  return data.age===oldAge
+})
+
+console.log(res)
